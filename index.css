@@ -1,7 +1,6 @@
 #css-zen-garden {
     background-image: url("galaga-background.jpeg");
     color: white;
-
 }
 
 @font-face {
@@ -13,6 +12,11 @@
 
 }
 
+/* The animation code */
+@keyframes colorChange {
+    from {color: white;}
+    to {color: red;}
+}
 
 h1 , h2 , h3{
 	font-family: press_start_2pregular;
@@ -20,24 +24,44 @@ h1 , h2 , h3{
 
 }
 h2 ,h3 {
-
-	 border-bottom: 4px dotted yellow;
-	 border-bottom-width: 100%; 
-
+	 
 }
+
 h1 {
 	font-size: 3em;
-	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+	text-shadow: 1px 1px 2px black, 0 0 25px #4FD5D6, 0 0 5px white;
+	color: red;
+    animation-name: colorChange;
+    animation-duration: 6s;
 }
+
 h2{
 	font-size:2em;
-	text-shadow: 0.2px 0.2px 0.5px black, 0 0 9px blue, 0 0 2px darkblue;
+	text-shadow: 0.2px 0.2px 0.5px black, 0 0 9px #4FD5D6, 0 0 2px darkblue;
+	padding: 20px;
+}
+
+h3 {
+	padding: 10px;
+	border-bottom: 4px solid white;
+	border-top: 4px solid white;
 }
 
 #zen-summary, #zen-preamble, #zen-supporting, #zen-participation, #zen-benefits, #zen-requirements {
 	background-color:#333333;
 	text-align: center;
-   	
+   	/*margin-left: 60px;
+   	margin-right: 60px;*/
+   	font-family: 'Fira Sans', sans-serif;
+}
+
+a {
+	color: #62D0F5;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
 }
 
 
