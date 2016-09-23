@@ -1,0 +1,43 @@
+#css-zen-garden {
+    background-image: url("galaga-background.jpeg");
+    color: white;
+
+}
+
+@font-face {
+    font-family: 'press_start_2pregular';
+    src: url('font/pressstart2p-webfont.woff2') format('woff2'),
+         url('font/pressstart2p-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+h1 , h2 , h3{
+	font-family: press_start_2pregular;
+	text-align: center;
+
+}
+h2 ,h3 {
+
+	 border-bottom: 4px dotted yellow;
+	 border-bottom-width: 100%; 
+
+}
+h1 {
+	font-size: 3em;
+	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+h2{
+	font-size:2em;
+	text-shadow: 0.2px 0.2px 0.5px black, 0 0 9px blue, 0 0 2px darkblue;
+}
+
+#zen-summary, #zen-preamble, #zen-supporting, #zen-participation, #zen-benefits, #zen-requirements {
+	background-color:#333333;
+	text-align: center;
+   	
+}
+
+
